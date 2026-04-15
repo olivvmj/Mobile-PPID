@@ -1,0 +1,19 @@
+:root > * {
+  /* Warna Header & Sidebar Aktif (Navy Dashboard) */
+  --md-primary-fg-color: #243763; 
+  --md-primary-fg-color--light: #314b85;
+  --md-primary-fg-color--dark: #1a284d;
+  
+  /* Warna teks header agar putih bersih */
+  --md-header-fg-color: #ffffff;
+}
+
+/* Membuat tampilan list di sidebar lebih rapat seperti SATUSEHAT */
+.md-nav__link {
+  font-weight: 400;
+}
+
+/* Warna link saat dihover */
+.md-typeset a {
+  color: #243763;
+}

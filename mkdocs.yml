@@ -5,50 +5,57 @@ theme:
   language: id
   logo: assets/logo.png
   favicon: assets/favicon.png
-  font: Merriweather Sans
+  # Font diganti sedikit agar lebih modern
+  font:
+    text: Roboto 
+    code: Roboto Mono
   palette:
     scheme: default
-    primary: navy
+    primary: custom  # Kita ganti jadi custom agar bisa pakai warna Navy aplikasi
     accent: light blue
-
   features:
     - navigation.sections
     - navigation.expand
     - navigation.instant
     - navigation.top
     - navigation.indexes
+    - navigation.tracking    # Tambahan: agar menu samping mengikuti scroll
+
+# Tambahkan ini untuk menyambungkan ke file CSS
+extra_css:
+  - assets/stylesheets/extra.css
 
 nav:
   - Beranda: index.md
 
   - Tentang:
-      - Tentang Aplikasi: mulai/tentang.md
-      - Cara Menggunakan: mulai/alur.md
+      - Tentang Aplikasi: content/tentang/tentang_aplikasi.md
+      - Cara Menggunakan: content/tentang/cara_menggunakan.md
 
   - Buat Akun & Login:
-      - Daftar Akun: akun/registrasi.md
-      - Aktivasi Akun: akun/aktivasi.md
-      - Login: akun/login.md
-      - Lupa Password: akun/lupa_password.md
+      - Daftar Akun: content/akun/registrasi.md
+      - Aktivasi Akun: content/akun/aktivasi.md
+      - Login: content/akun/login.md
+      - Lupa Password: content/akun/lupa_password.md
 
   - Mengajukan Informasi:
-      - Cara Ajukan Permohonan: pengajuan/permohonan.md
-      - Cara Ajukan Keberatan: pengajuan/keberatan.md
+      - Cara Ajukan Permohonan: content/pengajuan/permohonan.md
+      - Cara Ajukan Keberatan: content/pengajuan/keberatan.md
 
   - Cek Status Pengajuan:
-      - Monitoring Permohonan: monitoring/permohonan.md
-      - Monitoring Keberatan: monitoring/keberatan.md
+      - Monitoring Permohonan: content/monitoring/permohonan.md
+      - Monitoring Keberatan: content/monitoring/keberatan.md
 
   - Hasil & Tindak Lanjut:
-      - Hasil Penelitian: hasil/penelitian.md
-      - Perbaiki Berkas: hasil/berkas.md
+      - Hasil Penelitian: content/hasil/penelitian.md
+      - Perbaiki Berkas: content/hasil/berkas.md
 
   - Lihat Balasan:
-      - Kotak Masuk Permohonan: kotak_masuk/permohonan.md
-      - Kotak Masuk Keberatan: kotak_masuk/keberatan.md
+      - Kotak Masuk Permohonan: content/kotak_masuk/permohonan.md
+      - Kotak Masuk Keberatan: content/kotak_masuk/keberatan.md
 
   - Bantuan:
-      - FAQ: bantuan/faq.md
+      - FAQ: content/bantuan/faq.md
 
 plugins:
   - search
