@@ -1,0 +1,59 @@
+site_name: Mobile PPID
+
+theme:
+  name: material
+  language: id
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+  font: Merriweather Sans
+  palette:
+    scheme: default
+    primary: navy
+    accent: light blue
+
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.instant
+    - navigation.top
+    - navigation.indexes
+
+nav:
+  - Beranda: index.md
+
+  - Tentang:
+      - Tentang Aplikasi: mulai/tentang.md
+      - Cara Menggunakan: mulai/alur.md
+
+  - Buat Akun & Login:
+      - Daftar Akun: akun/registrasi.md
+      - Aktivasi Akun: akun/aktivasi.md
+      - Login: akun/login.md
+      - Lupa Password: akun/lupa_password.md
+
+  - Mengajukan Informasi:
+      - Cara Ajukan Permohonan: pengajuan/permohonan.md
+      - Cara Ajukan Keberatan: pengajuan/keberatan.md
+
+  - Cek Status Pengajuan:
+      - Monitoring Permohonan: monitoring/permohonan.md
+      - Monitoring Keberatan: monitoring/keberatan.md
+
+  - Hasil & Tindak Lanjut:
+      - Hasil Penelitian: hasil/penelitian.md
+      - Perbaiki Berkas: hasil/berkas.md
+
+  - Lihat Balasan:
+      - Kotak Masuk Permohonan: kotak_masuk/permohonan.md
+      - Kotak Masuk Keberatan: kotak_masuk/keberatan.md
+
+  - Bantuan:
+      - FAQ: bantuan/faq.md
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      type: datetime
+      locale: id
+      timezone: Asia/Jakarta
+      fallback_to_build_date: true
