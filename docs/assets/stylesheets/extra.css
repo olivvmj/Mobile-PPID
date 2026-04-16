@@ -17,3 +17,7 @@
 .md-typeset a {
   color: #243763;
 }
+
+.md-nav--secondary {
+  display: none !important;
+}

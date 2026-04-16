@@ -14,12 +14,9 @@ theme:
     primary: custom  # Kita ganti jadi custom agar bisa pakai warna Navy aplikasi
     accent: light blue
   features:
-    - navigation.sections
     - navigation.expand
-    - navigation.instant
-    - navigation.top
-    - navigation.indexes
-    - navigation.tracking    # Tambahan: agar menu samping mengikuti scroll
+  hide:
+    - toc
 
 # Tambahkan ini untuk menyambungkan ke file CSS
 extra_css:
